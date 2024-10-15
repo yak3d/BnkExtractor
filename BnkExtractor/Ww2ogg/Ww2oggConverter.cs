@@ -54,6 +54,8 @@ public static class Ww2oggConverter
             ww.GenerateOgg(of);
             Logger.LogVerbose("Done!");
             Logger.LogVerbose("");
+
+            of.Close();
         }
         catch (FileOpenException fe)
         {
